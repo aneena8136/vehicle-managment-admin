@@ -1,0 +1,89 @@
+/* Sidebar Styles */
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1A1A2E;
+  color: white;
+  padding: 20px;
+  transition: transform 0.3s ease; /* Smooth transition */
+  transform: translateX(0); /* Visible by default on desktop and tablet */
+  z-index: 1000;
+}
+
+/* Sidebar hidden state for mobile (active when toggled) */
+@media only screen and (max-width: 480px) {
+  .sidebar {
+    transform: translateX(-100%); /* Hidden on mobile by default */
+    width: 200px; /* Adjust width for mobile */
+  }
+
+  .sidebar.active {
+    transform: translateX(0); /* Show sidebar when active on mobile */
+  }
+}
+
+/* Tablet view (768px and below) */
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Adjust sidebar width on tablet devices */
+  }
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+  display: none; /* Hidden on desktop and tablet */
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 1001; /* Ensure it stays above other content */
+}
+
+@media only screen and (max-width: 480px) {
+  .hamburger {
+    display: block; /* Show hamburger on mobile */
+  }
+}
+
+/* Sidebar content */
+.titleContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.carIcon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar ul li:hover {
+  background-color: #575757;
+}

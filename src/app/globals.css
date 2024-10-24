@@ -1,7 +1,13 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+:global(:root) {
+  --primary-color: #1A1A2E;
+  --secondary-color: #DC143C;
+  --accent-color: #4CAF50;
+  --font-color: #666;
+  --background-light: #f9f9f9;
+  --background-dark: #1A1A2E;
+  --transition-duration: 0.3s;
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {

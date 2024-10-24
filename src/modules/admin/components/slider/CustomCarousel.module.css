@@ -1,0 +1,37 @@
+/* components/CustomCarousel.module.css */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .imageContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image {
+    width: 250px; /* Set a common width */
+    height: 200px; /* Set a common height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+  }
+  
+  .arrow {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10; /* Ensures the arrows are on top of the images */
+    padding: 10px;
+  }
+  
+  .arrow:hover {
+    color: #FF4D30; /* Change color on hover */
+  }
+  

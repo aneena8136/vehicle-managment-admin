@@ -1,0 +1,201 @@
+.formContainer {
+  max-width: 500px;
+  margin: 24px auto;
+  padding: 30px;
+  background-color: #fff; /* Sleek white background */
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow for depth */
+  border: 1px solid #eaeaea; /* Light border for a polished look */
+}
+
+.formContainer h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  color: #1A1A2E; /* Primary dark color */
+  letter-spacing: 1px;
+  text-transform: uppercase; /* Capitalized for emphasis */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Shadow for heading */
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #333; /* Dark text for contrast */
+  font-family: 'Poppins', sans-serif; /* Luxurious font style */
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Softer rounded corners */
+  font-size: 15px;
+  background-color: #fafafa; /* Light grey background for input fields */
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  border-color: #1A1A2E; /* Dark color focus state */
+  box-shadow: 0 0 8px rgba(26, 26, 46, 0.2); /* Soft focus glow */
+  outline: none;
+}
+
+.inputGroup textarea {
+  resize: vertical;
+}
+
+.inputGroup select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Same rounded corners as input fields */
+  font-size: 15px;
+  background-color: #fafafa; /* Light grey background for uniform look */
+  font-family: 'Poppins', sans-serif; /* Consistent font */
+  transition: border-color 0.3s, box-shadow 0.3s;
+  appearance: none; /* Remove default arrow for custom styling */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10"><path fill="%23333" d="M0 0l7 7 7-7z"/></svg>'); /* Custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
+}
+
+.inputGroup select:focus {
+  border-color: #1A1A2E; /* Same focus color as input fields */
+  box-shadow: 0 0 8px rgba(26, 26, 46, 0.2); /* Soft focus glow */
+  outline: none;
+}
+
+.button {
+  width: 100%;
+  padding: 14px;
+  background-color: #1A1A2E; /* Luxurious dark primary color */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button:disabled {
+  background-color: #cccccc;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #0056b3; /* Striking hover color */
+  box-shadow: 0 4px 12px rgba(255, 77, 48, 0.4); /* Luxurious hover shadow */
+}
+
+.successMessage {
+  color: #28a745;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.errorMessage {
+  color: #dc3545;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.import {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.import h4 {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+/* Responsive styles */
+
+
+
+
+@media (max-width: 600px) {
+  .formContainer {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .formContainer h2 {
+    font-size: 1.8rem;
+  }
+
+  .inputGroup input,
+  .inputGroup select {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .formContainer {
+    padding: 25px;
+    margin-left: 200px;
+  }
+
+  .formContainer h2 {
+    font-size: 2rem;
+  }
+
+  .inputGroup input,
+  .inputGroup select {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .button {
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .formContainer {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .formContainer h2 {
+    font-size: 1.5rem;
+  }
+
+  .inputGroup label {
+    font-size: 14px; /* Adjust label font size */
+  }
+
+  .inputGroup input,
+  .inputGroup select {
+    padding: 10px; /* Reduce input padding */
+    font-size: 14px; /* Adjust input font size */
+  }
+
+  .button {
+    padding: 12px; /* Reduce button padding */
+    font-size: 15px; /* Adjust button font size */
+  }
+}

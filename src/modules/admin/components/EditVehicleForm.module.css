@@ -1,0 +1,134 @@
+.form {
+
+  max-width: 500px;
+  margin-left: 300px;
+  /* margin: 0 auto; */
+  padding: 25px;
+  background-color: #f9f9f9; /* Soft off-white background */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif; /* Premium-looking font */
+}
+
+.form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #1A1A2E; /* Darker color for contrast */
+}
+
+.form div {
+  margin-bottom: 20px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #444; /* Slightly darker text for labels */
+}
+
+.form input[type="text"],
+.form input[type="number"],
+.form input[type="file"],
+.form textarea,
+.form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif; /* Consistent font across all elements */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  color: #333; /* Text color for better contrast */
+}
+
+.form input[type="text"]:focus,
+.form input[type="number"]:focus,
+.form input[type="file"]:focus,
+.form textarea:focus,
+.form select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.2);
+  outline: none; /* Remove default browser outline */
+}
+
+.form select {
+  appearance: none; /* Remove default arrow for a more modern look */
+  background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23007bff" d="M2 0L0 2h4z"/></svg>') no-repeat right 10px center;
+  background-size: 10px;
+}
+
+.form button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #1A1A2E; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 10px rgba(0, 91, 179, 0.3);
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1024px) {
+  .form {
+    padding: 20px; /* Slightly reduced padding for larger screens */
+  }
+
+  .form h2 {
+    font-size: 22px; /* Slightly smaller heading font size */
+  }
+
+  .form input[type="text"],
+  .form input[type="number"],
+  .form textarea,
+  .form select {
+    font-size: 15px; /* Reduce font size for better fit */
+  }
+
+  .form button {
+    padding: 10px; /* Adjust button padding */
+    font-size: 15px; /* Slightly smaller button font */
+  }
+}
+
+@media (max-width: 768px) {
+  .form {
+    margin-left: 200px;
+    padding: 15px; /* Further reduce padding for smaller screens */
+  }
+
+  .form h2 {
+    font-size: 20px; /* Smaller heading font size */
+  }
+
+  .form input[type="text"],
+  .form input[type="number"],
+  .form textarea,
+  .form select {
+    padding: 10px; /* Reduce padding for input fields */
+    font-size: 14px; /* Adjust font size for better readability */
+  }
+
+  .form button {
+    padding: 10px; /* Consistent button padding */
+    font-size: 14px; /* Adjust button font size */
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    padding: 20px; /* Keep padding consistent for mobile */
+  }
+}
